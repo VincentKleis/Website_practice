@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body style="background-color: azure;" id="background">
+<script>
+function Random_color(){
+    let color, value1, value2, value3
+    color = document.getElementById("background");
+    value1 = Math.floor(Math.random() * 256)
+    value2 = Math.floor(Math.random() * 256)
+    value3 = Math.floor(Math.random() * 256)
+    color.style.backgroundColor = `rgb(${value1}, ${value2}, ${value3})`
+}    
+</script>
+<button type="button" onclick="Random_color()"> Random new color</button>
+</body>
+</html>
